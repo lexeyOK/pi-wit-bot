@@ -1,0 +1,9 @@
+SOUL.md
+USERS.md
+node_modules/
+dist/
+.env
+data/
+sessions/
+logs/
+*.log

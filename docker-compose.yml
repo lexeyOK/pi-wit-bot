@@ -1,0 +1,27 @@
+services:
+  chromadb:
+    image: chromadb/chroma:latest
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - chromadb_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma
+      - ANONYMIZED_TELEMETRY=FALSE
+
+  bot:
+    build: .
+    restart: unless-stopped
+    network_mode: host
+    env_file: .env
+    volumes:
+      - bot_data:/app/data
+      - ./SOUL.md:/app/SOUL.md
+      - ./USERS.md:/app/USERS.md
+      - ./AGENTS.md:/app/AGENTS.md
+
+volumes:
+  chromadb_data:
+  bot_data:
