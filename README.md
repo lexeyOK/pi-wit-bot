@@ -1,4 +1,5 @@
- > [!WARNING] all of this was vibecoded, the code was not checked by a human and the enormous amounts of drincable watter was removed :/
+ > [!WARNING]
+ > all of this was vibecoded, the code was not checked by a human and the enormous amounts of drincable watter was removed :/
 
 # pi-wit-bot
 
