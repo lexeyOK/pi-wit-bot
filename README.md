@@ -1,3 +1,5 @@
+ > [!WARNING] all of this was vibecoded, the code was not checked by a human and the enormous amounts of drincable watter was removed :/
+
 # pi-wit-bot
 
 Telegram group chat bot powered by Pi SDK + DeepSeek V4 Fast. Character-driven, memory-aware, selectively responds via a two-stage gate.
